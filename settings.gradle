@@ -1,0 +1,3 @@
+rootProject.name='ChqbookVypaar'
+include ':app'
+include ':chqbookvypaar'

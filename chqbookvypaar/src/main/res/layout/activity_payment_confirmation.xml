@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.PaymentConfirmation">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+<ImageView
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:src="@drawable/success"
+    android:id="@+id/successImage"
+    android:layout_gravity="center"
+    android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Successful"
+        android:layout_gravity="center"
+        android:textSize="24dp"
+        android:fontFamily="@font/noto_bold"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorTextDark"
+        android:textStyle="bold"
+        android:id="@+id/successful"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your transaction of ₹4049.00 has been successfully processed. Your available\n limit is ₹3000."
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:fontFamily="@font/noto_regular"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorTextLight"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:id="@+id/sub_heading"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Redirecting to merchant platform in 5 second... "
+        android:layout_gravity="center"
+        android:textSize="12dp"
+        android:fontFamily="@font/noto_regular"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorTextDark"
+        android:id="@+id/redirecting"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="HOME"
+            android:layout_gravity="center"
+            android:textSize="12dp"
+            android:fontFamily="@font/noto_regular"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:background="@color/button"
+            android:id="@+id/home"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:background="#FAFAFA"
+        android:padding="20dp">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/chqbook_logo"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Promotional messaging will come here. This is dummy text."
+            android:gravity="center"
+            android:textSize="12dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/noto_regular"
+            android:textColor="@color/colorTextDark"
+            android:id="@+id/promotionalText"/>
+    </LinearLayout>
+
+</LinearLayout>

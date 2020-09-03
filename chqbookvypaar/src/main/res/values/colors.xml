@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/orange</color>
+    <color name="colorPrimaryDark">@color/orange_dark</color>
+    <color name="colorAccent">@color/bright_blue</color>
+    <color name="colorTextDark">#001C3D</color>
+    <color name="colorTextLight">#8996A6</color>
+    <color name="linecolour">#E5E8ED</color>
+
+
+
+
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="charcoal_grey">#2b2c31</color>
+    <color name="bg">#f9f9f9</color>
+    <color name="line">#DCDCDC</color>
+    <color name="text1">#202020</color>
+
+    <color name="white">#ffffff</color>
+    <color name="green">@color/orange</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_gray">#dbdbdb</color>
+    <color name="light_gray_50">#88dbdbdb</color>
+    <color name="orange">#fe6b29</color>
+    <color name="bright_blue">#007fff</color>
+    <color name="dull_black">#425364</color>
+    <color name="black">#000000</color>
+    <color name="green_dark">@color/orange_dark</color>
+    <color name="apple_green">@color/orange_light</color>
+    <color name="kiwi">#b5eb45</color>
+    <color name="apple_green_50">#807ed321</color>
+    <color name="apple_green_10">#167ed321</color>
+    <color name="forest">#085b08</color>
+    <color name="light_sage">#b8e986</color>
+    <color name="ocean">#007991</color>
+    <color name="light_aquamarine">#78ffd6</color>
+    <color name="hospital_green">#96e6a1</color>
+    <color name="light_yellow_green">#d3fc7a</color>
+    <color name="light_khaki">#f2f69a</color>
+    <color name="pale_blue">#d2fdfd</color>
+    <color name="soft_pink">#ffb0ba</color>
+    <color name="pale_salmon">#ffc2a0</color>
+    <color name="pig_pink">#e089b4</color>
+    <color name="salmon_pink">#fa7e7f</color>
+    <color name="periwinkle">#8f78fd</color>
+    <color name="salmon_pink_two">#fa7d7e</color>
+    <color name="charcoal">#3a3b3a</color>
+    <color name="dark_grass_green">#417505</color>
+    <color name="kiwi_two">#b4ec51</color>
+    <color name="tree_green">#429321</color>
+    <color name="iris">#6c4abe</color>
+    <color name="dark_sky_blue_two">#589ae2</color>
+    <color name="light_khaki_two">#edf9db</color>
+    <color name="kiwi_green">#97d645</color>
+    <color name="slate">#708090</color>
+    <color name="watermelon">#f55160</color>
+    <color name="cherry">#d60524</color>
+    <color name="tangerine">#ff9101</color>
+    <color name="maize">#edbe51</color>
+    <color name="scarlet">#d0021b</color>
+    <color name="white_btn">#eeeeee</color>
+    <color name="red">#FD2A6E</color>
+    <color name="notification">@color/colorPrimary</color>
+    <color name="macaroni_and_cheese">#f3bc3d</color>
+    <color name="yellow_tan">#ffd574</color>
+    <color name="pinkish_orange">#fe6b29</color>
+    <color name="light_sky_blue">#f1f6fb</color>
+    <color name="toolbar_green_light">#a0d53d</color>
+    <color name="toolbar_green_dark">#10d082</color>
+    <color name="premium_header_color">#4c000000</color>
+    <color name="light_sky_blue_bg">#d1dee9</color>
+    <color name="disabled">#1e000000</color>
+    <color name="black_contact_num">#282828</color>
+    <color name="gray">#9b9b9b</color>
+
+    <color name="policy_rejected_bg_blue">#95a9c0</color>
+    <color name="policy_sucess_bg_blue">#3d72f3</color>
+    <color name="light_black">#99000000</color>
+    <color name="dialog_green">#006c1b</color>
+    <color name="azure">#0386e8</color>
+    <color name="cobalt">#1d4c78</color>
+
+    <color name="sky_blue">#7497ff</color>
+    <color name="dodger_blue">#3d72f3</color>
+    <color name="greenblue">#30d389</color>
+    <color name="green_teal">#09b466</color>
+    <color name="pale_grey">#f1f6fb</color>
+    <color name="green_flower">#4BC04E</color>
+    <color name="row_aqua_color">#058fe9</color>
+    <color name="light_red">#ff7569</color>
+    <color name="dark_red">#e64543</color>
+    <color name="green_curve_color">#117000</color>
+    <color name="blue_curve_color">#0045B3</color>
+
+    <color name="filter_color">#274a00</color>
+
+    <color name="black_50">#88000000</color>
+
+    <color name="orange_dark">@color/orange</color>
+    <color name="orange_light">#EF7F4C</color>
+
+
+
+    <color name="heading_col">#979797</color>
+    <color name="bg_color">#f7f7f7</color>
+    <color name="black_effective">#2a2a2a</color>
+    <color name="shadow">#d0d8dc</color>
+    <color name="black_full">#000000</color>
+    <color name="preview_header">#425364</color>
+    <color name="greyish_brown">#4a4a4a</color>
+    <color name="bug_assigned">#F5A623</color>
+    <color name="bug_open">#007FFF</color>
+
+    <!--Design colors-->
+    <color name="page_background">#f9f9f9</color>
+
+
+    <color name="white_50">#80FFFFFF</color>
+
+    <color name="text_color_hint">#9B9B9B</color>
+
+
+    <!-- zxing -->
+
+    <color name="white_background">#fefefe</color>
+
+    <color name="gray_a">#aaaaaa</color>
+
+
+    <!-- saved form text color -->
+    <color name="s_black">#425364</color>
+    <color name="bg_tab">#E7ECECEC</color>
+    <color name="disable">#8C8C8C</color>
+    <color name="button">#E82E2F</color>
+</resources>

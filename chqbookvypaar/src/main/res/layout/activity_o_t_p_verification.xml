@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.OTPVerification">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chqbook"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN TO YOUR ACCOUNT"
+        android:fontFamily="@font/noto_bold"
+        android:textColor="@color/colorTextDark"
+        android:textSize="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/OTP"
+        android:textColor="@color/colorTextLight"
+        android:text="Enter OTP Sent To xxxxxxx8196"
+        android:fontFamily="@font/noto_regular"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:textSize="14dp"/>
+    <EditText
+        android:id="@+id/otp_text"
+        style="@style/EditTextStyle"
+        android:layout_marginLeft="16dp"
+        android:hint="Enter OTP"
+        android:inputType="number"
+        android:maxLength="4"
+        android:fontFamily="@font/noto_regular"
+        android:letterSpacing="1.0"
+        android:layout_marginTop="30dp"
+        android:layout_height="68dp"
+        android:gravity="center"
+        android:layout_marginRight="16dp"
+        android:textColorHint="@color/black"
+        android:singleLine="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Didn't receive the otp?  "
+            android:fontFamily="@font/noto_regular"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorTextLight"
+            android:layout_gravity="center"
+            android:textSize="14dp"/>
+        <TextView
+            android:id="@+id/resendText"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorTextLight"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:textSize="14dp"/>
+    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_height="48dp">
+            <Button
+                android:id="@+id/proceed"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/noto_bold"
+                android:text="VERIFY AND PROCEED"
+                android:textColor="@color/white"
+                android:background="@color/button"/>
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:indeterminateTint="@color/white"
+                android:layout_height="38dp"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        android:id="@+id/cancel"
+        android:textColor="@color/colorTextDark"
+        android:fontFamily="@font/noto_bold"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:textSize="12dp"/>
+    </LinearLayout>
+</RelativeLayout>
