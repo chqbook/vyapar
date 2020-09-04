@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/noto_bold"
-            android:text="Review Payment"
+            android:text="@string/review_payment"
             android:layout_marginTop="34dp"
             android:textColor="@color/black"
             android:textSize="24dp" />
@@ -79,7 +79,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:fontFamily="@font/noto_bold"
-                android:text="PAY NOW"
+                android:text="@string/pay_now"
                 android:textColor="@color/white"
                 android:background="@color/button"/>
             <ProgressBar

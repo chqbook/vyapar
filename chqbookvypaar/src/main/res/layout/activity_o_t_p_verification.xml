@@ -21,7 +21,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="LOGIN TO YOUR ACCOUNT"
+        android:text="@string/login_to_your_account"
         android:fontFamily="@font/noto_bold"
         android:textColor="@color/colorTextDark"
         android:textSize="24dp"
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/OTP"
         android:textColor="@color/colorTextLight"
-        android:text="Enter OTP Sent To xxxxxxx8196"
+        android:text="@string/enter_otp_sent_to_xxxxxxx8196"
         android:fontFamily="@font/noto_regular"
         android:layout_marginTop="8dp"
         android:layout_gravity="center"
@@ -41,7 +41,7 @@
         android:id="@+id/otp_text"
         style="@style/EditTextStyle"
         android:layout_marginLeft="16dp"
-        android:hint="Enter OTP"
+        android:hint="@string/enter_otp"
         android:inputType="number"
         android:maxLength="4"
         android:fontFamily="@font/noto_regular"
@@ -61,7 +61,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Didn't receive the otp?  "
+            android:text="@string/didn_t_receive_the_otp"
             android:fontFamily="@font/noto_regular"
             android:layout_marginTop="8dp"
             android:textColor="@color/colorTextLight"
@@ -88,7 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:fontFamily="@font/noto_bold"
-                android:text="VERIFY AND PROCEED"
+                android:text="@string/verify_and_proceed"
                 android:textColor="@color/white"
                 android:background="@color/button"/>
             <ProgressBar
@@ -105,7 +105,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CANCEL"
+        android:text="@string/cancel"
         android:id="@+id/cancel"
         android:textColor="@color/colorTextDark"
         android:fontFamily="@font/noto_bold"
