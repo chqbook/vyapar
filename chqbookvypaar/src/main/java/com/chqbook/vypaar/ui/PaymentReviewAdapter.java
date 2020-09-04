@@ -17,22 +17,17 @@ import java.util.ArrayList;
 
 public class PaymentReviewAdapter extends RecyclerView.Adapter<PaymentReviewAdapter.PaymentHolder> {
 
-    // List to store all the contact details
     private ArrayList<Result> paymentValues;
     private Context mContext;
 
-    // Counstructor for the Class
     public PaymentReviewAdapter(ArrayList<Result> contactsList) {
         this.paymentValues = contactsList;
     }
 
-    // This method creates views for the RecyclerView by inflating the layout
-    // Into the viewHolders which helps to display the items in the RecyclerView
     @Override
     public PaymentHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
 
-        // Inflate the layout view you have created for the list rows here
         View view = layoutInflater.inflate(R.layout.payment_review_card, parent, false);
         return new PaymentHolder(view);
     }
@@ -42,7 +37,6 @@ public class PaymentReviewAdapter extends RecyclerView.Adapter<PaymentReviewAdap
         return paymentValues == null ? 0 : paymentValues.size();
     }
 
-    // This method is called when binding the data to the views being created in RecyclerView
     @Override
     public void onBindViewHolder(@NonNull PaymentHolder holder, final int position) {
         final Result payment = paymentValues.get(position);

@@ -16,7 +16,6 @@ public class AddCookieInterceptor implements Interceptor {
         if(CookieData.getInstance().getCl_pg_txs()!=null && CookieData.getInstance().getLvl_session()!=null ){
         builder.addHeader("cl_pg_txs", CookieData.getInstance().getCl_pg_txs());
         builder.addHeader("lvl_session", CookieData.getInstance().getLvl_session());}
-        // This is done so I know which headers are being added; this interceptor is used after the normal logging of OkHttp
         return chain.proceed(builder.build());
     }
 }
