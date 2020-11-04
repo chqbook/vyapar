@@ -4,23 +4,21 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
-import java.util.List;
 
 public class FinalPaymentResponse implements Serializable {
+    @SerializedName("metadata")
+    @Expose
+    private FinalPaymentMetadata metadata;
     @SerializedName("data")
     @Expose
     private FinalPaymentData data;
 
-    @SerializedName("errors")
-    @Expose
-    private List<String> errors = null;
-
-    public List<String> getErrors() {
-        return errors;
+    public FinalPaymentMetadata getMetadata() {
+        return metadata;
     }
 
-    public void setErrors(List<String> errors) {
-        this.errors = errors;
+    public void setMetadata(FinalPaymentMetadata metadata) {
+        this.metadata = metadata;
     }
 
     public FinalPaymentData getData() {
@@ -30,4 +28,5 @@ public class FinalPaymentResponse implements Serializable {
     public void setData(FinalPaymentData data) {
         this.data = data;
     }
+
 }

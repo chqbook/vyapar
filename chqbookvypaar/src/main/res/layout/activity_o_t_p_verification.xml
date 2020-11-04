@@ -1,116 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.OTPVerification">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
         android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/chqbook"
-        android:layout_marginTop="60dp"
-        android:layout_gravity="center"/>
+        <ImageView
+            android:layout_width="200dp"
+            android:id="@+id/logo"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/login_to_your_account"
-        android:fontFamily="@font/noto_bold"
-        android:textColor="@color/colorTextDark"
-        android:textSize="24dp"
-        android:layout_marginTop="50dp"
-        android:layout_gravity="center"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/OTP"
-        android:textColor="@color/colorTextLight"
-        android:text="@string/enter_otp_sent_to_xxxxxxx8196"
-        android:fontFamily="@font/noto_regular"
-        android:layout_marginTop="8dp"
-        android:layout_gravity="center"
-        android:textSize="14dp"/>
-    <EditText
-        android:id="@+id/otp_text"
-        style="@style/EditTextStyle"
-        android:layout_marginLeft="16dp"
-        android:hint="@string/enter_otp"
-        android:inputType="number"
-        android:maxLength="4"
-        android:fontFamily="@font/noto_regular"
-        android:letterSpacing="1.0"
-        android:layout_marginTop="30dp"
-        android:layout_height="68dp"
-        android:gravity="center"
-        android:layout_marginRight="16dp"
-        android:textColorHint="@color/black"
-        android:singleLine="true" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:gravity="center"
-        android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/didn_t_receive_the_otp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/noto_bold"
+            android:text="@string/login_to_your_account"
+            android:textColor="@color/colorTextDark"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/OTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/noto_regular"
-            android:layout_marginTop="8dp"
             android:textColor="@color/colorTextLight"
-            android:layout_gravity="center"
-            android:textSize="14dp"/>
-        <TextView
-            android:id="@+id/resendText"
-            android:layout_width="wrap_content"
-            android:textColor="@color/colorTextLight"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/otp_text"
+            style="@style/EditTextStyle"
+            android:layout_height="55dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/noto_regular"
+            android:gravity="center"
+            android:hint="@string/enter_otp"
+            android:inputType="number"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:textColorHint="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:layout_marginTop="8dp"
-            android:layout_gravity="center"
-            android:textSize="14dp"/>
-    </LinearLayout>
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/noto_regular"
+                android:text="@string/didn_t_receive_the_otp"
+                android:textColor="@color/colorTextLight"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/resendText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/noto_regular"
+                android:textColor="@color/colorTextLight"
+                android:textSize="14dp" />
+        </LinearLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
+            android:layout_height="48dp"
             android:layout_margin="16dp"
-            android:layout_marginTop="24dp"
-            android:layout_height="48dp">
+            android:layout_marginTop="24dp">
+
             <Button
                 android:id="@+id/proceed"
-                android:layout_centerInParent="true"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/mybutton"
                 android:fontFamily="@font/noto_bold"
                 android:text="@string/verify_and_proceed"
-                android:textColor="@color/white"
-                android:background="@color/button"/>
+                android:textColor="@color/white" />
+
             <ProgressBar
                 android:id="@+id/progressBar1"
                 style="?android:attr/progressBarStyleLarge"
                 android:layout_width="wrap_content"
-                android:indeterminateTint="@color/white"
                 android:layout_height="38dp"
-                android:layout_centerInParent="true"/>
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/white" />
 
         </RelativeLayout>
 
 
-    <TextView
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/noto_bold"
+            android:text="@string/cancel"
+            android:textColor="@color/colorTextDark"
+            android:textSize="12dp" />
+    </LinearLayout>
+    <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cancel"
-        android:id="@+id/cancel"
-        android:textColor="@color/colorTextDark"
-        android:fontFamily="@font/noto_bold"
-        android:layout_marginTop="8dp"
-        android:layout_gravity="center"
-        android:textSize="12dp"/>
-    </LinearLayout>
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/progress"/>
 </RelativeLayout>

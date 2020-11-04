@@ -1,19 +1,20 @@
 package com.chqbook.vypaar;
 
-import java.util.List;
+import java.util.HashSet;
+
 
 public class CookieData {
 
     private String cl_pg_txs;
     private String lvl_session;
-    private List<String> cookie;
-    private static CookieData sInstance = null;
+    private HashSet<String> cookie;
+    public static  CookieData sInstance = new CookieData();
 
     private CookieData() {
 
     }
 
-    public synchronized static CookieData getInstance() {
+    public static CookieData getInstance() {
         if (sInstance == null) {
             sInstance = new CookieData();
         }
@@ -28,11 +29,11 @@ public class CookieData {
         this.cl_pg_txs = cl_pg_txs;
     }
 
-    public List<String> getCookie(){
+    public HashSet<String> getCookie(){
         return cookie;
     }
 
-    public void setCookie(List<String> cookie) {
+    public void setCookie(HashSet<String> cookie) {
         this.cookie = cookie;
     }
 

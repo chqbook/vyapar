@@ -11,4 +11,26 @@
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">16sp</item>
     </style>
+
+    <style name="NotoBold">
+        <item name="fontFamily">@font/noto_bold</item>
+        <item name="android:fontFamily">@font/noto_bold</item>
+    </style>
+
+    <style name="NotoRegular">
+        <item name="fontFamily">@font/noto_regular</item>
+        <item name="android:fontFamily">@font/noto_regular</item>
+    </style>
+
+    <style name="NotoBold16" parent="NotoBold">
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="AppFullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
 </resources>

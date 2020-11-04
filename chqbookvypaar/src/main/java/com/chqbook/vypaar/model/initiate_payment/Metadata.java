@@ -11,6 +11,18 @@ public class Metadata implements Serializable {
     @Expose
     private TxSummary txSummary;
 
+    public String getConfirmationButtonText() {
+        return confirmationButtonText;
+    }
+
+    public void setConfirmationButtonText(String confirmationButtonText) {
+        this.confirmationButtonText = confirmationButtonText;
+    }
+
+    @SerializedName("confirmation_button_text")
+    @Expose
+    private String confirmationButtonText;
+
     public TxSummary getTxSummary() {
         return txSummary;
     }

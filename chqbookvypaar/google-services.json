@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "492073479560",
+    "firebase_url": "https://vyapaar-6a493.firebaseio.com",
+    "project_id": "vyapaar-6a493",
+    "storage_bucket": "vyapaar-6a493.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492073479560:android:1143d79d17bb0822d19e3d",
+        "android_client_info": {
+          "package_name": "com.chqbook.vypaar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492073479560-bgtttf6jre3ut2uthubnh9c3fu3kjvqs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chqbook.vypaar",
+            "certificate_hash": "e359bb96c8a618b58d47dcf5edf28be39f89acf4"
+          }
+        },
+        {
+          "client_id": "492073479560-232mle0m1f4a3dcplhnln6ut8plf75ce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnBn2TJIxJ3jNhk7lGxoe51qhiRBFOvN0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492073479560-232mle0m1f4a3dcplhnln6ut8plf75ce.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

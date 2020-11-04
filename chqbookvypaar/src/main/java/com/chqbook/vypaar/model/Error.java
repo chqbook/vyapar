@@ -11,6 +11,18 @@ public class Error implements Serializable {
     @Expose
     private List<String> errors = null;
 
+    public String getErrorCode() {
+        return errorCode;
+    }
+
+    public void setErrorCode(String errorCode) {
+        this.errorCode = errorCode;
+    }
+
+    @SerializedName("error_code")
+    @Expose
+    private String errorCode;
+
     public List<String> getErrors() {
         return errors;
     }

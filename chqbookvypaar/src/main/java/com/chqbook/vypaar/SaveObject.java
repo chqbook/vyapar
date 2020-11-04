@@ -3,21 +3,50 @@ package com.chqbook.vypaar;
 import android.content.Context;
 
 public class SaveObject {
+    private static final SaveObject ourInstance = new SaveObject();
     private Context context;
-    private String appKey;
     private String userId;
     private String storeId;
     private String partnerTxNo;
     private String accountNo;
     private String amount;
+    private String code;
+    private String codeStatus;
+    private String transactionId;
+    private String mobile;
+    private String apiKey;
+    private ChqbookVypaarCallback callback;
+    private String accountProvider;
 
-    private static final SaveObject ourInstance = new SaveObject();
+    private SaveObject() {
+    }
 
     public static SaveObject getInstance() {
         return ourInstance;
     }
 
-    private SaveObject() {
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getCodeStatus() {
+        return codeStatus;
+    }
+
+    public void setCodeStatus(String codeStatus) {
+        this.codeStatus = codeStatus;
+    }
+
+    public String getTransactionId() {
+        return transactionId;
+    }
+
+    public void setTransactionId(String transactionId) {
+        this.transactionId = transactionId;
     }
 
     public String getStoreId() {
@@ -61,19 +90,44 @@ public class SaveObject {
         this.userId = userId;
     }
 
-    public void setAppKey(String appKey) {
-        this.appKey = appKey;
-    }
-
-    public String getAppKey() {
-        return appKey;
+    public Context getContext() {
+        return context;
     }
 
     public void setContext(Context context) {
         this.context = context;
     }
 
-    public Context getContext() {
-        return context;
+    public ChqbookVypaarCallback getCallback() {
+        return callback;
+    }
+
+    public void setCallback(ChqbookVypaarCallback callback) {
+        this.callback = callback;
+    }
+
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public String getApiKey() {
+        return apiKey;
+    }
+
+    public void setApiKey(String apiKey) {
+        this.apiKey = apiKey;
+    }
+
+    public String getAccountProvider() {
+        return accountProvider;
+    }
+
+    public void setAccountProvider(String accountProvider) {
+        this.accountProvider = accountProvider;
     }
 }

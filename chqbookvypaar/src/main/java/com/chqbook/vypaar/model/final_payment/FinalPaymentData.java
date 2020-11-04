@@ -7,27 +7,27 @@ import java.io.Serializable;
 
 public class FinalPaymentData implements Serializable {
 
-   @SerializedName("message")
-   @Expose
-   private String message;
-   @SerializedName("results")
-   @Expose
-   private Boolean results;
+    @SerializedName("message")
+    @Expose
+    private String message;
+    @SerializedName("results")
+    @Expose
+    private FinalPaymentResult results;
 
-   public String getMessage() {
-       return message;
-   }
+    public String getMessage() {
+        return message;
+    }
 
-   public void setMessage(String message) {
-       this.message = message;
-   }
+    public void setMessage(String message) {
+        this.message = message;
+    }
 
-   public Boolean getResults() {
-       return results;
-   }
+    public FinalPaymentResult getResults() {
+        return results;
+    }
 
-   public void setResults(Boolean results) {
-       this.results = results;
-   }
+    public void setResults(FinalPaymentResult results) {
+        this.results = results;
+    }
 
 }
