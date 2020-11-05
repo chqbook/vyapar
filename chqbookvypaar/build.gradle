@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'maven'
 group='com.github.pm-chqbook'
+version='0.0.6'
 
 android {
     compileSdkVersion 29
