@@ -4,21 +4,6 @@ apply plugin: 'maven-publish'
 apply plugin: 'com.github.dcendents.android-maven'
 group='com.github.pm-chqbook'
 
-//publish {
-//    def groupProjectID = 'com.chqbook.vypaar'
-//    def artifactProjectID = 'chqbookvypaar'
-//    def publishVersionID = '0.0.14'
-//
-//    userOrg = 'chqbookvypaartesting'
-//    repoName = 'chqbookvypaar'
-//    groupId = groupProjectID
-//    artifactId = artifactProjectID
-//    publishVersion = publishVersionID
-//    desc = 'Chqbook payment SDK'
-//    website = 'https://github.com/chqbook/ecom-sdk'
-//
-//}
-
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
