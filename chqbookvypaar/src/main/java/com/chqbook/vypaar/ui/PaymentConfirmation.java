@@ -33,6 +33,7 @@ public class PaymentConfirmation extends AppCompatActivity {
     private InitialiseResponse initialResponse;
     private String transactionID;
     boolean isSuccess = false;
+    boolean isCompleted = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,11 +86,14 @@ public class PaymentConfirmation extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(SaveObject.getInstance().getContext(), OTPVerification.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-                if (isSuccess)
-                    intent.putExtra("data", "end");
-                else
-                    intent.putExtra("data", "failed");
-                SaveObject.getInstance().getContext().startActivity(intent);
+                if(isCompleted) {
+                    if (isSuccess)
+                        intent.putExtra("data", "end");
+                    else
+                        intent.putExtra("data", "failed");
+                    isCompleted=false;
+                    SaveObject.getInstance().getContext().startActivity(intent);
+                }
             }
         });
     }
@@ -103,11 +107,14 @@ public class PaymentConfirmation extends AppCompatActivity {
             public void onFinish() {
                 Intent intent = new Intent(PaymentConfirmation.this, OTPVerification.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-                if (isSuccess)
-                    intent.putExtra("data", "end");
-                else
-                    intent.putExtra("data", "failed");
-                PaymentConfirmation.this.startActivity(intent);
+                if(isCompleted) {
+                    if (isSuccess)
+                        intent.putExtra("data", "end");
+                    else
+                        intent.putExtra("data", "failed");
+                    isCompleted = false;
+                    PaymentConfirmation.this.startActivity(intent);
+                }
             }
         }.start();
 

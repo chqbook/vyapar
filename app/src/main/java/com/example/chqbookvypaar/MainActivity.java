@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         JSONObject js = new JSONObject();
         try {
             js.put(AMOUNT, 10000);
-            js.put(ACCOUNT_NO, "SK65552");
+            js.put(ACCOUNT_NO, "7748962888");
             js.put(API_KEY, "f1f5rfe2-c6a6-79ea-66d0-07162bc115783");
             js.put(MOBILE_NO, "7748962888");
             js.put(STORE_CODE, "10");
