@@ -34,12 +34,12 @@ public class MainActivity extends AppCompatActivity {
         JSONObject js = new JSONObject();
         try {
             js.put(AMOUNT, 10000);
-            js.put(ACCOUNT_NO, "7748962888");
-            js.put(API_KEY, "f1f5rfe2-c6a6-79ea-66d0-07162bc115783");
-            js.put(MOBILE_NO, "7748962888");
+            js.put(ACCOUNT_NO, "7208507225");
+            js.put(API_KEY, "f1f5rfe2-c6a6-79ea-66d0-07162bc115782");
+            js.put(MOBILE_NO, "7208507225");
             js.put(STORE_CODE, "10");
             js.put(PARTNER_TX_NO, "454455dd54dd54");
-            js.put(ACCOUNT_PROVIDER, "SHOP_KIRANA");
+            js.put(ACCOUNT_PROVIDER, "METRO");
             chqbookVypaar.initiatePayment(js, new ChqbookVypaarCallback() {
                 @Override
                 public void onSuccess(String code, String transactionId) {

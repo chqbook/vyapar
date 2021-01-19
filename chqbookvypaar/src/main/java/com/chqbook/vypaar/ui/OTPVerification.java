@@ -76,6 +76,7 @@ public class OTPVerification extends AppCompatActivity {
                 callVerifyOtp();
             }
         });
+
         resend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -300,12 +301,14 @@ public class OTPVerification extends AppCompatActivity {
         new CountDownTimer(time * 1000, 1000) {
 
             public void onTick(long millisUntilFinished) {
+                resend.setEnabled(false);
                 resend.setText(" Resend in " + new SimpleDateFormat("ss").format(new Date(millisUntilFinished)) + " seconds");
                 resend.setTextColor(getResources().getColor(R.color.colorTextLight));
 
             }
 
             public void onFinish() {
+                resend.setEnabled(true);
                 resend.setText(" Resend");
                 resend.setTextColor(getResources().getColor(R.color.colorTextDark));
                 proceed.setEnabled(true);
