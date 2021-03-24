@@ -123,7 +123,7 @@ public class OTPVerification extends AppCompatActivity {
         progress.setVisibility(View.VISIBLE);
 
         Call<VerifyOTPResponse> call = RetrofitClient
-                .getInstance().getApi().verifyOtp(SaveObject.getInstance().getApiKey(), SaveObject.getInstance().getMobile(), otp.getText().toString(),SaveObject.getInstance().getAccountProvider());
+                .getInstance().getApi().verifyOtp(SaveObject.getInstance().getApiKey(), SaveObject.getInstance().getMobile(), otp.getText().toString(),SaveObject.getInstance().getAccountNo(),SaveObject.getInstance().getAccountProvider());
 
         call.enqueue(new Callback<VerifyOTPResponse>() {
             @Override
