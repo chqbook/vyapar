@@ -17,6 +17,7 @@ public class SaveObject {
     private String apiKey;
     private ChqbookVypaarCallback callback;
     private String accountProvider;
+    private boolean debug;
 
     private SaveObject() {
     }
@@ -129,5 +130,13 @@ public class SaveObject {
 
     public void setAccountProvider(String accountProvider) {
         this.accountProvider = accountProvider;
+    }
+
+    public boolean isDebug() {
+        return debug;
+    }
+
+    public void setDebug(boolean debug) {
+        this.debug = debug;
     }
 }

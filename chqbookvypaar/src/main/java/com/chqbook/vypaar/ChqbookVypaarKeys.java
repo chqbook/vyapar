@@ -8,4 +8,5 @@ public interface ChqbookVypaarKeys {
     String MOBILE_NO = "mobile_no";
     String API_KEY = "api-key";
     String ACCOUNT_PROVIDER = "accountProvider";
+    String DEBUG = "debug";
 }

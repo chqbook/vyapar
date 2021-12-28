@@ -17,6 +17,7 @@ import static com.chqbook.vypaar.ChqbookVypaarKeys.ACCOUNT_NO;
 import static com.chqbook.vypaar.ChqbookVypaarKeys.ACCOUNT_PROVIDER;
 import static com.chqbook.vypaar.ChqbookVypaarKeys.AMOUNT;
 import static com.chqbook.vypaar.ChqbookVypaarKeys.API_KEY;
+import static com.chqbook.vypaar.ChqbookVypaarKeys.DEBUG;
 import static com.chqbook.vypaar.ChqbookVypaarKeys.MOBILE_NO;
 import static com.chqbook.vypaar.ChqbookVypaarKeys.PARTNER_TX_NO;
 import static com.chqbook.vypaar.ChqbookVypaarKeys.STORE_CODE;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
             js.put(STORE_CODE, "11");
             js.put(PARTNER_TX_NO, "454455dd54dd54");
             js.put(ACCOUNT_PROVIDER, "METRO");
+            js.put(DEBUG, true);
             chqbookVypaar.initiatePayment(js, new ChqbookVypaarCallback() {
                 @Override
                 public void onSuccess(String code, String transactionId) {

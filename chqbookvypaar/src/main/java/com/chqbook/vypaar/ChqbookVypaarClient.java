@@ -12,6 +12,7 @@ import static com.chqbook.vypaar.ChqbookVypaarKeys.ACCOUNT_NO;
 import static com.chqbook.vypaar.ChqbookVypaarKeys.ACCOUNT_PROVIDER;
 import static com.chqbook.vypaar.ChqbookVypaarKeys.AMOUNT;
 import static com.chqbook.vypaar.ChqbookVypaarKeys.API_KEY;
+import static com.chqbook.vypaar.ChqbookVypaarKeys.DEBUG;
 import static com.chqbook.vypaar.ChqbookVypaarKeys.MOBILE_NO;
 import static com.chqbook.vypaar.ChqbookVypaarKeys.PARTNER_TX_NO;
 import static com.chqbook.vypaar.ChqbookVypaarKeys.STORE_CODE;
@@ -55,6 +56,8 @@ public class ChqbookVypaarClient {
                 saveObject.setMobile(jsonObject.getString(MOBILE_NO));
             if (jsonObject.has(ACCOUNT_PROVIDER))
                 saveObject.setAccountProvider(jsonObject.getString(ACCOUNT_PROVIDER));
+            if (jsonObject.has(DEBUG))
+                saveObject.setDebug(jsonObject.getBoolean(DEBUG));
             Intent intent = new Intent(context, OTPVerification.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(intent);
